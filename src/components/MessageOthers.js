@@ -1,8 +1,10 @@
 import React from 'react'
-const MessageOthers = ({ data }) => {
+const MessageOthers = ({ data, isGroup }) => {
+  console.log(data)
   return (
     <div className='flex w-full my-1'>
       <div className='relative p-3 bg-white rounded min-w-14 max-w-[700px] shadow-md'>
+       {isGroup && <div className='text-sm text-blue-400'>{data?.sender}</div>}
         {data?.text ? 
         <p className='pr-12 text-gray-700'>{data?.text}</p>
          : 
