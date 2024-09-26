@@ -28,7 +28,7 @@ const ChatArea = ({ data }) => {
   };
   return (
     <>
-      {data !== null ? <div className={`w-[70%] flex h-full flex-col overflow-y-auto ${isPopupOpen && "w-[45%]"}`} id='chatarea'>
+      {data !== null ? <div className={`flex h-full flex-col overflow-y-auto ${isPopupOpen ? "w-[45%]" : "w-[70%]"}`} id='chatarea'>
         <div className={`fixed z-30 flex items-center justify-between h-20 gap-5 px-6 py-6 bg-white w-[70%] ${isPopupOpen && "w-[45%]"}`}>
           <div className='flex gap-5'>
             <img src={data?.profilePhoto} className='rounded-full cursor-pointer h-14' onClick={openPopUp} />
