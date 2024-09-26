@@ -3,7 +3,7 @@ import { RxCross2 } from "react-icons/rx";
 const Profile = ({ isPopupOpen, data, onClose }) => {
   return (
     <div
-      className={`flex items-center justify-center overflow-y-auto bg-white absolute z-30 w-[25%] transition-all duration-500 gap-3 flex-col ${isPopupOpen ? "right-0" : "right-[-20rem]"
+      className={`flex items-center overflow-y-auto bg-white absolute z-30 w-[25%] transition-all duration-500 gap-3 h-full flex-col ${isPopupOpen ? "right-0" : "right-[-20rem]"
         }`}
     >
       <RxCross2 className='absolute top-0 left-0 m-3 text-xl cursor-pointer' onClick={onClose}/>
