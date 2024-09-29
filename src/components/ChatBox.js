@@ -1,27 +1,29 @@
-import React from 'react'
-import MessageOthers from './MessageOthers'
-import MessageSelf from './MessageSelf'
+import React, { useEffect, useState } from 'react';
+import { fetchUserMessages } from '../api/api';
+import MessageOthers from './MessageOthers';
+import MessageSelf from './MessageSelf';
 
-const ChatBox = ({data}) => {
-  console.log(data)
+const ChatBox = ({ data }) => {
+  const [messages, setMessages] = useState([]);
+
+  useEffect(() => {
+    const fetchMessages = async () => {
+      if (data) {
+        const fetchedMessages = await fetchUserMessages(data.id);
+        setMessages(fetchedMessages);
+      }
+    };
+
+    fetchMessages();
+  }, [data]);
+
   return (
     <div className='h-full p-6 mt-20 mb-24'>
-      {data?.admin ?
-      <>
-       {data?.messages?.map((item,index)=>(
-            item?.sender !== "You" ? <MessageOthers data={item} isGroup={true}/> : <MessageSelf data={item}/>
-        ))}
-      </>
-      :
-      <>
-       {data?.chat?.messages?.map((item,index)=>(
-            item?.sender !== "You" ? <MessageOthers data={item}/> : <MessageSelf data={item}/>
-        ))}
-      </>
-      }
-       
+      {messages.map((item, index) => (
+        item?.sender !== "You" ? <MessageOthers key={index} data={item} /> : <MessageSelf key={index} data={item} />
+      ))}
     </div>
-  )
-}
+  );
+};
 
-export default ChatBox
+export default ChatBox;

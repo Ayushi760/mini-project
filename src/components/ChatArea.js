@@ -7,8 +7,7 @@ import whatsappIcon from "../assets/whatsapp.svg"
 import TextBox from './TextBox'
 import VideoCallWindow from './VideoCallWindow'
 import Profile from './Profile'
-const ChatArea = ({ data }) => {
-  console.log(data,"Chatarea")
+const ChatArea = ({ data}) => {
   const [isVideoCallOpen, setIsVideoCallOpen] = useState(false);
   const [isPopupOpen, setIsPopupOpen] = useState(false);
   const openVideoCall = () => {
@@ -46,7 +45,7 @@ const ChatArea = ({ data }) => {
           </div>
         </div>
         <ChatBox data={data} />
-        <TextBox isPopupOpen={isPopupOpen}/>
+        <TextBox isPopupOpen={isPopupOpen} userId={data?.id}/>
         {isVideoCallOpen && (
         <VideoCallWindow 
           userData={data}

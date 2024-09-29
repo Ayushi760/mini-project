@@ -9,6 +9,7 @@ import GroupCard from "./GroupCard";
 import { MdGroups } from "react-icons/md";
 
 const SideBar = ({ data, onSelectUser, groupdata }) => {
+    console.log(onSelectUser,"sidebar")
     const [searchTerm, setSearchTerm] = useState("");
     const [activeTab, setActiveTab] = useState("all");
     const [isGroup, setIsGroup] = useState(false);

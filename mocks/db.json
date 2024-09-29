@@ -1,0 +1,429 @@
+{
+  "users": [
+    {
+      "id": "1",
+      "name": "Alice",
+      "profilePhoto": "https://randomuser.me/api/portraits/men/41.jpg",
+      "isOnline": true,
+      "phoneNumber": "+1234567890",
+      "about": "Just a software developer enjoying life.",
+      "chat": {
+        "user": "Alice",
+        "messages": [
+          {
+            "sender": "Alice",
+            "text": "Hey there! How's it going?",
+            "date": "24/09/2024",
+            "time": "10:00 am"
+          },
+          {
+            "sender": "You",
+            "text": "Hey Alice! I'm doing well, what about you?",
+            "date": "24/09/2024",
+            "time": "10:02 am",
+            "isRead": true
+          },
+          {
+            "sender": "Alice",
+            "text": "I'm good too, just a bit busy",
+            "date": "24/09/2024",
+            "time": "10:05 am"
+          },
+          {
+            "sender": "You",
+            "text": "Glad to hear that!",
+            "date": "24/09/2024",
+            "time": "10:10 am",
+            "isRead": true
+          },
+          {
+            "sender": "Alice",
+            "text": "Have you started on the project we discussed?",
+            "date": "24/09/2024",
+            "time": "10:15 am"
+          },
+          {
+            "sender": "You",
+            "text": "Yes, just getting into it. Should be fun!",
+            "date": "24/09/2024",
+            "time": "10:18 am",
+            "isRead": false
+          },
+          {
+            "sender": "Alice",
+            "image": {
+              "url": "/office2.jpg",
+              "caption": "In office....."
+            },
+            "date": "24/09/2024",
+            "time": "10:20 am"
+          },
+          {
+            "sender": "You",
+            "text": "bdnbd",
+            "date": "29/09/2024",
+            "time": "12:35:39",
+            "isRead": false
+          }
+        ]
+      }
+    },
+    {
+      "id": "2",
+      "name": "Bob",
+      "profilePhoto": "https://randomuser.me/api/portraits/men/42.jpg",
+      "isOnline": false,
+      "chat": {
+        "user": "Bob",
+        "messages": [
+          {
+            "sender": "Bob",
+            "text": "Hey! What's up?",
+            "date": "23/09/2024",
+            "time": "9:30 pm"
+          },
+          {
+            "sender": "You",
+            "text": "Not much, just relaxing.",
+            "date": "23/09/2024",
+            "time": "9:32 pm",
+            "isRead": true
+          },
+          {
+            "sender": "Bob",
+            "text": "Nice! Any plans for the weekend?",
+            "date": "23/09/2024",
+            "time": "9:35 pm"
+          },
+          {
+            "sender": "You",
+            "text": "Thinking of going hiking. You?",
+            "date": "23/09/2024",
+            "time": "9:36 pm",
+            "isRead": true
+          },
+          {
+            "sender": "Bob",
+            "text": "Sounds awesome! I'm just catching up on some shows.",
+            "date": "23/09/2024",
+            "time": "9:40 pm"
+          },
+          {
+            "sender": "You",
+            "image": {
+              "url": "/office.jpg",
+              "caption": "In office, doing late night shift for today."
+            },
+            "date": "23/09/2024",
+            "time": "9:46 pm",
+            "isRead": true
+          }
+        ]
+      }
+    },
+    {
+      "id": "3",
+      "name": "Charlie",
+      "profilePhoto": "https://randomuser.me/api/portraits/men/43.jpg",
+      "isOnline": true,
+      "chat": {
+        "user": "Charlie",
+        "messages": [
+          {
+            "sender": "Charlie",
+            "text": "Hey! How's your day going?",
+            "date": "24/09/2024",
+            "time": "10:20 am"
+          },
+          {
+            "sender": "You",
+            "text": "Pretty good! Just busy with work.",
+            "date": "24/09/2024",
+            "time": "10:22 am",
+            "isRead": true
+          },
+          {
+            "sender": "Charlie",
+            "text": "I feel you! What are you working on?",
+            "date": "24/09/2024",
+            "time": "10:25 am"
+          },
+          {
+            "sender": "You",
+            "text": "Just a project proposal. It’s quite challenging!",
+            "date": "24/09/2024",
+            "time": "10:27 am",
+            "isRead": true
+          },
+          {
+            "sender": "Charlie",
+            "text": "I can help if you need it!",
+            "date": "24/09/2024",
+            "time": "10:30 am"
+          },
+          {
+            "sender": "You",
+            "text": "Hi Charlie, Good Afternoon😀",
+            "date": "29/09/2024",
+            "time": "14:15:45",
+            "isRead": false
+          },
+          {
+            "sender": "Charlie",
+            "text": "Hey, Good Afternoon😀",
+            "date": "29/09/2024",
+            "time": "14:17:45"
+          }
+        ]
+      }
+    },
+    {
+      "id": "4",
+      "name": "David",
+      "profilePhoto": "https://randomuser.me/api/portraits/men/44.jpg",
+      "isOnline": false,
+      "chat": {
+        "user": "David",
+        "messages": [
+          {
+            "sender": "David",
+            "text": "Hey! Are we still on for tomorrow?",
+            "date": "23/09/2024",
+            "time": "5:00 pm"
+          },
+          {
+            "sender": "You",
+            "text": "Absolutely! Looking forward to it.",
+            "date": "23/09/2024",
+            "time": "5:02 pm",
+            "isRead": true
+          },
+          {
+            "sender": "David",
+            "text": "Great! What time?",
+            "date": "23/09/2024",
+            "time": "5:05 pm"
+          },
+          {
+            "sender": "You",
+            "text": "How about 2 PM?",
+            "date": "23/09/2024",
+            "time": "5:10 pm",
+            "isRead": true
+          },
+          {
+            "sender": "David",
+            "text": "Sounds good! Let's meet at the cafe?",
+            "date": "23/09/2024",
+            "time": "5:12 pm"
+          },
+          {
+            "sender": "You",
+            "text": "Perfect! See you then.",
+            "date": "23/09/2024",
+            "time": "5:15 pm",
+            "isRead": true
+          }
+        ]
+      }
+    },
+    {
+      "id": "5",
+      "name": "Eve",
+      "profilePhoto": "https://randomuser.me/api/portraits/men/45.jpg",
+      "isOnline": true,
+      "chat": {
+        "user": "Eve",
+        "messages": [
+          {
+            "sender": "Eve",
+            "text": "Hey! Long time no see!",
+            "date": "24/09/2024",
+            "time": "11:00 am"
+          },
+          {
+            "sender": "You",
+            "text": "I know, right? How have you been?",
+            "date": "24/09/2024",
+            "time": "11:02 am",
+            "isRead": true
+          },
+          {
+            "sender": "Eve",
+            "text": "Busy with work, but good overall.",
+            "date": "24/09/2024",
+            "time": "11:05 am"
+          },
+          {
+            "sender": "Eve",
+            "image": {
+              "url": "/office.jpg"
+            },
+            "date": "23/09/2024",
+            "time": "11:07 am"
+          },
+          {
+            "sender": "You",
+            "text": "Glad to hear that!",
+            "date": "24/09/2024",
+            "time": "11:10 am",
+            "isRead": true
+          },
+          {
+            "sender": "Eve",
+            "text": "What about you? Any exciting news?",
+            "date": "24/09/2024",
+            "time": "11:15 am"
+          },
+          {
+            "sender": "You",
+            "text": "Just got a promotion at work!",
+            "date": "24/09/2024",
+            "time": "11:20 am",
+            "isRead": true
+          },
+          {
+            "sender": "Eve",
+            "text": "That's amazing! Congratulations!",
+            "date": "24/09/2024",
+            "time": "11:25 am"
+          }
+        ]
+      }
+    },
+    {
+      "id": "6",
+      "name": "Frank",
+      "profilePhoto": "https://randomuser.me/api/portraits/men/46.jpg",
+      "isOnline": false,
+      "chat": {
+        "user": "Frank",
+        "messages": [
+          {
+            "sender": "You",
+            "image": {
+              "url": "office",
+              "caption": "In office."
+            },
+            "date": "23/09/2024",
+            "time": "8:00 pm",
+            "isRead": true
+          },
+          {
+            "sender": "Frank",
+            "text": "Cool! What are you working on?",
+            "date": "23/09/2024",
+            "time": "8:10 pm"
+          },
+          {
+            "sender": "You",
+            "text": "Just finishing up a report.",
+            "date": "23/09/2024",
+            "time": "8:15 pm",
+            "isRead": true
+          },
+          {
+            "sender": "Frank",
+            "text": "Nice! Need any help?",
+            "date": "23/09/2024",
+            "time": "8:20 pm"
+          },
+          {
+            "sender": "You",
+            "text": "I think I've got it covered, but thanks!",
+            "date": "23/09/2024",
+            "time": "8:25 pm",
+            "isRead": true
+          }
+        ]
+      }
+    },
+    {
+      "id": "7",
+      "name": "Grace",
+      "profilePhoto": "https://randomuser.me/api/portraits/men/47.jpg",
+      "isOnline": true,
+      "chat": {
+        "user": "Grace",
+        "messages": [
+          {
+            "sender": "Grace",
+            "text": "Hey! How's the project going?",
+            "date": "24/09/2024",
+            "time": "11:30 am"
+          },
+          {
+            "sender": "You",
+            "text": "It's coming along well! Thanks for asking.",
+            "date": "24/09/2024",
+            "time": "11:32 am",
+            "isRead": true
+          },
+          {
+            "sender": "Grace",
+            "text": "Awesome! Need any assistance?",
+            "date": "24/09/2024",
+            "time": "11:35 am"
+          },
+          {
+            "sender": "You",
+            "text": "Not right now, but I appreciate it!",
+            "date": "24/09/2024",
+            "time": "11:40 am",
+            "isRead": true
+          }
+        ]
+      }
+    },
+    {
+      "id": "8",
+      "name": "Henry",
+      "profilePhoto": "https://randomuser.me/api/portraits/men/48.jpg",
+      "isOnline": false,
+      "chat": {
+        "user": "Henry",
+        "messages": [
+          {
+            "sender": "Henry",
+            "text": "Hey! When are we meeting again?",
+            "date": "22/09/2024",
+            "time": "6:00 pm"
+          },
+          {
+            "sender": "You",
+            "text": "How about next Thursday?",
+            "date": "22/09/2024",
+            "time": "6:05 pm",
+            "isRead": true
+          },
+          {
+            "sender": "Henry",
+            "text": "Sounds good! What time?",
+            "date": "22/09/2024",
+            "time": "6:10 pm"
+          },
+          {
+            "sender": "You",
+            "text": "Let's say 3 PM?",
+            "date": "22/09/2024",
+            "time": "6:15 pm",
+            "isRead": true
+          },
+          {
+            "sender": "Henry",
+            "text": "Perfect! See you then.",
+            "date": "22/09/2024",
+            "time": "6:20 pm"
+          },
+          {
+            "sender": "You",
+            "text": "Hi",
+            "date": "29/09/2024",
+            "time": "14:09:25",
+            "isRead": false
+          }
+        ]
+      }
+    }
+  ]
+}

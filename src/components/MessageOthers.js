@@ -1,6 +1,5 @@
 import React from 'react'
 const MessageOthers = ({ data, isGroup }) => {
-  console.log(data)
   return (
     <div className='flex w-full my-1'>
       <div className='relative p-3 bg-white rounded min-w-14 max-w-[700px] shadow-md'>
