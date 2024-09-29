@@ -45,7 +45,7 @@ const SideBar = ({ data, onSelectUser, groupdata }) => {
     };
 
     return (
-        <div className="w-[30%] py-3 px-6 flex flex-col gap-6 shadow-lg">
+        <div className="w-[30%] py-3 px-6 flex flex-col gap-6 shadow-lg" data-testid="sidebar-1">
             <div className="flex w-full gap-2">
                 <img src={whatsappIcon} alt="whatsapp-icon" />
                 <div className="tracking-[1px] font-semibold text-gray-700">

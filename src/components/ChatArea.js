@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import phone from "../assets/phone.svg"
 import video from "../assets/video.svg"
 import search from "../assets/search.svg"
@@ -7,9 +7,11 @@ import whatsappIcon from "../assets/whatsapp.svg"
 import TextBox from './TextBox'
 import VideoCallWindow from './VideoCallWindow'
 import Profile from './Profile'
-const ChatArea = ({ data}) => {
+import { fetchUserMessages} from '../api/api'
+const ChatArea = ({ data, fetchAllUsers}) => {
   const [isVideoCallOpen, setIsVideoCallOpen] = useState(false);
   const [isPopupOpen, setIsPopupOpen] = useState(false);
+  const [messages, setMessages] = useState([]);
   const openVideoCall = () => {
     setIsVideoCallOpen(true);
   };
@@ -25,10 +27,22 @@ const ChatArea = ({ data}) => {
   const closePopUp = () => {
     setIsPopupOpen(false);
   };
+
+  const fetchMessages = async () => {
+    if (data) {
+      const fetchedMessages = await fetchUserMessages(data.id);
+      setMessages(fetchedMessages);
+    }
+  };
+
+  useEffect(() => {
+    fetchMessages();
+  }, [data]);
+
   return (
     <>
       {data !== null ? <div className={`flex h-full flex-col overflow-y-auto ${isPopupOpen ? "w-[45%]" : "w-[70%]"}`} id='chatarea'>
-        <div className={`fixed z-30 flex items-center justify-between h-20 gap-5 px-6 py-6 bg-white w-[70%] ${isPopupOpen && "w-[45%]"}`}>
+        <div className={`fixed z-30 flex items-center justify-between h-20 gap-5 px-6 py-6 bg-white ${isPopupOpen ? "w-[45%]" : "w-[70%]"}`}>
           <div className='flex gap-5'>
             <img src={data?.profilePhoto} className='rounded-full cursor-pointer h-14' onClick={openPopUp} />
             <div>
@@ -44,8 +58,8 @@ const ChatArea = ({ data}) => {
             <img src={search} className='h-5 pr-6' />
           </div>
         </div>
-        <ChatBox data={data} />
-        <TextBox isPopupOpen={isPopupOpen} userId={data?.id}/>
+        <ChatBox messages={messages}/>
+        <TextBox isPopupOpen={isPopupOpen} userId={data?.id} fetchMessages={fetchMessages} fetchAllUsers={fetchAllUsers}/>
         {isVideoCallOpen && (
         <VideoCallWindow 
           userData={data}

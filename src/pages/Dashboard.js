@@ -20,24 +20,24 @@ import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import SideBar from '../components/SideBar';
 import ChatArea from '../components/ChatArea';
-
+import { fetchUsers } from '../api/api';
 const Dashboard = () => {
   const [selectedChat, setSelectedChat] = useState(null);
   const [users, setUsers] = useState([]);
 
-  useEffect(() => {
-    const fetchUsers = async () => {
-      const response = await axios.get('http://localhost:3001/users');
-      setUsers(response.data);
-    };
+  const fetchAllUsers = async () => {
+    const response = await fetchUsers();
+    setUsers(response);
+  };
 
-    fetchUsers();
+  useEffect(() => {
+    fetchAllUsers();
   }, []);
 
   return (
     <div className='flex h-screen overflow-hidden'>
       <SideBar data={users} onSelectUser={setSelectedChat} />
-      <ChatArea data={selectedChat} />
+      <ChatArea data={selectedChat} fetchAllUsers={fetchAllUsers}/>
     </div>
   );
 };

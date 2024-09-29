@@ -9,7 +9,7 @@ import { useMutation, useQueryClient } from '@tanstack/react-query';
 import { sendMessage } from '../api/api';
 import { IoIosSend } from "react-icons/io";
 
-const TextBox = ({isPopupOpen, userId}) => {
+const TextBox = ({isPopupOpen, userId, fetchMessages, fetchAllUsers}) => {
     const [isOpen, setIsOpen] = useState(false);
     const [message, setMessage] = useState('');
     const queryClient = useQueryClient();
@@ -21,6 +21,8 @@ const TextBox = ({isPopupOpen, userId}) => {
         mutationFn: sendMessage,
         onSuccess: (data) => {
           console.log('Message sent successfully:', data);
+          fetchMessages();
+          fetchAllUsers();
           setMessage('');
         },
         onError: (error) => {
@@ -44,7 +46,7 @@ const TextBox = ({isPopupOpen, userId}) => {
     
 
     return (
-        <div className={`absolute flex h-[50px] px-6 justify-center items-center bg-gray-200 border-t border-solid border-t-medium-gray gap-4 z-30 bottom-0 w-[70%] ${isPopupOpen && "w-[45%]"}`}>
+        <div className={`absolute flex h-[50px] px-6 justify-center items-center bg-gray-200 border-t border-solid border-t-medium-gray gap-4 z-30 bottom-0 ${isPopupOpen ? "w-[45%]" : "w-[70%]"}`}>
             <IoAddOutline
                 className={`text-2xl cursor-pointer transform transition-transform duration-300 ${isOpen ? 'bg-gray-300 rounded-full rotate-45' : ''}`}
                 onClick={handleOpen}
