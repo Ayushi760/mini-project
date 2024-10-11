@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/static/css/main.887aa795.css",
+    "main.js": "/static/js/main.df714a89.js",
+    "static/js/453.fbc4bb8b.chunk.js": "/static/js/453.fbc4bb8b.chunk.js",
+    "static/media/whatsapbg.png": "/static/media/whatsapbg.8d601ced3c5aee9ca452.png",
+    "static/media/logo.svg": "/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "static/media/whatsapp.svg": "/static/media/whatsapp.007b3abf944b329155ef25281dcd2f07.svg",
+    "static/media/edit.svg": "/static/media/edit.5eba939fd563a1e777c55430e94335a8.svg",
+    "static/media/groups.svg": "/static/media/groups.09a329897f6df3ce936bdc511b777b4c.svg",
+    "index.html": "/index.html",
+    "static/media/search.svg": "/static/media/search.d581f878a67aeb4c770c19b315cb398e.svg",
+    "static/media/phone.svg": "/static/media/phone.55170e2f932be4f1ac6352fe1c9b546f.svg",
+    "static/media/menu.svg": "/static/media/menu.7d53a651a036c320cff785c19e74a5b7.svg",
+    "static/media/video.svg": "/static/media/video.d2b81ffc1e0fde5db95bfa2c6fd32157.svg",
+    "static/media/doubleTickBlue.svg": "/static/media/doubleTickBlue.2bcd538f43ca0fea53a1f3a89bd03a1e.svg",
+    "static/media/doubleTickGray.svg": "/static/media/doubleTickGray.0ff6bbd8999cc17cbedaf35fe26841a6.svg",
+    "main.887aa795.css.map": "/static/css/main.887aa795.css.map",
+    "main.df714a89.js.map": "/static/js/main.df714a89.js.map",
+    "453.fbc4bb8b.chunk.js.map": "/static/js/453.fbc4bb8b.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.887aa795.css",
+    "static/js/main.df714a89.js"
+  ]
+}
